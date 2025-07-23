@@ -1,0 +1,140 @@
+/* style.css for Shreyashi's CalcMate */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  user-select: none;
+}
+
+.calc-wrapper {
+  max-width: 360px;
+  margin: 70px auto;
+  padding: 25px;
+  background: #1e1e2f;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.7);
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-header h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #00ffe7;
+  margin-bottom: 5px;
+}
+
+.calc-header p {
+  font-size: 1.1rem;
+  color: #66fff2cc;
+  margin-bottom: 25px;
+}
+
+.display-box input#displayField {
+  width: 100%;
+  font-size: 2.6rem;
+  padding: 18px 24px;
+  border-radius: 15px;
+  background: #2a2a3e;
+  border: none;
+  text-align: right;
+  color: #00ffe7;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  caret-color: transparent;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+}
+
+.btn {
+  padding: 22px 0;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #111;
+  background: #00ffe7aa;
+  box-shadow: 0 6px 12px #00ffe7aa;
+  font-weight: 700;
+  user-select: none;
+}
+
+.btn:hover {
+  background: #00ffc4cc;
+  box-shadow: 0 8px 20px #00ffc4cc;
+}
+
+/* Operator buttons */
+.btn-op {
+  background: #ff0055cc;
+  color: #fff;
+  box-shadow: 0 6px 12px #ff0055cc;
+}
+
+.btn-op:hover {
+  background: #ff3388cc;
+  box-shadow: 0 8px 20px #ff3388cc;
+}
+
+/* Clear button */
+.btn-clear {
+  background: #ff6600cc;
+  color: #fff;
+  box-shadow: 0 6px 12px #ff6600cc;
+}
+
+.btn-clear:hover {
+  background: #ff854dcc;
+  box-shadow: 0 8px 20px #ff854dcc;
+}
+
+/* Delete button */
+.btn-del {
+  background: #cc00ffaa;
+  color: #fff;
+  box-shadow: 0 6px 12px #cc00ffaa;
+}
+
+.btn-del:hover {
+  background: #ff33aacc;
+  box-shadow: 0 8px 20px #ff33aacc;
+}
+
+/* Equal button */
+.btn-equal {
+  background: #00ff99cc;
+  color: #111;
+  box-shadow: 0 6px 12px #00ff99cc;
+  grid-column: span 1;
+}
+
+.btn-equal:hover {
+  background: #33ffbbaa;
+  box-shadow: 0 8px 20px #33ffbbaa;
+}
+
+/* Zero button spans two columns */
+.btn-zero {
+  grid-column: span 2;
+}
+
+/* Footer */
+.calc-footer p {
+  margin-top: 35px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ffe7bb;
+  font-style: italic;
+}
+
+/* Developed by Shreyashi for CodSoft Internship - July 2025 */

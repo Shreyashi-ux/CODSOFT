@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shreyashi's CalcMate</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Calculator project by Shreyashi | CodSoft Internship | July 2025 -->
+</head>
+<body>
+  <!-- Calculator main wrapper -->
+  <div class="calc-wrapper">
+    
+    <!-- Header section -->
+    <header class="calc-header">
+      <h1>CalcMate 🔢</h1>
+      <p>Created by <span class="author-name">Shreyashi</span></p>
+    </header>
+
+    <!-- Display box -->
+    <div class="display-box">
+      <input type="text" id="displayField" placeholder="0" readonly />
+    </div>
+
+    <!-- Button grid -->
+    <section class="buttons-grid">
+      <!-- Function buttons -->
+      <button data-action="clear" class="btn btn-clear">AC</button>
+      <button data-action="delete" class="btn btn-del">DEL</button>
+      <button data-action="percent" class="btn btn-op">%</button>
+      <button data-action="divide" class="btn btn-op">÷</button>
+
+      <!-- Number & operator buttons -->
+      <button data-action="7" class="btn btn-num">7</button>
+      <button data-action="8" class="btn btn-num">8</button>
+      <button data-action="9" class="btn btn-num">9</button>
+      <button data-action="multiply" class="btn btn-op">×</button>
+
+      <button data-action="4" class="btn btn-num">4</button>
+      <button data-action="5" class="btn btn-num">5</button>
+      <button data-action="6" class="btn btn-num">6</button>
+      <button data-action="subtract" class="btn btn-op">−</button>
+
+      <button data-action="1" class="btn btn-num">1</button>
+      <button data-action="2" class="btn btn-num">2</button>
+      <button data-action="3" class="btn btn-num">3</button>
+      <button data-action="add" class="btn btn-op">+</button>
+
+      <button data-action="0" class="btn btn-num btn-zero">0</button>
+      <button data-action="decimal" class="btn btn-num">.</button>
+      <button data-action="equals" class="btn btn-equal">=</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="calc-footer">
+      <p>Made by <span class="author-name">Shreyashi</span></p>
+    </footer>
+
+  </div>
+
+  <!-- Linking JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
